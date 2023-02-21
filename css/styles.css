@@ -23,8 +23,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-two);
-    font-style: normal;
-    text-align: center;
+    
+    
     background-color: var(--color-inverted);
     font-size: var(--font-size16);
     line-height: var(--line-height1);
@@ -151,7 +151,7 @@ img {
             rgba(46, 47, 66, 0.7)),  url('../images/people-office1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     color: var(--color-inverted);
     text-align: center;
     font-size: var(--font-size56);
@@ -229,6 +229,7 @@ img {
     margin-bottom: 8px;
     padding: 24px 100px;
 }
+
 /*section-two-index*/
 
 .pages-twice {
@@ -382,12 +383,14 @@ background-color: var(--color-lightblue);
 /*footer-index*/
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     font-family: 'Raleway', sans-serif;
     background-color: var(--color-one);
     color: var(--color-lighter);
     letter-spacing: 0.03em;
-    line-height: 24px;
-    text-align: left;
+    line-height: var(--line-height15);
+  
     text-decoration: none;
 }
 
@@ -419,28 +422,30 @@ margin-right: 120px;
     letter-spacing: 0.02em;
 }
 
+
 .footer-container {
-    width: 1158px;
-    padding: 0px 15px;
-    margin: 0 auto;
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
+/*
+.container-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}*/
+
+/*
 .footer-pages {
     display: flex;
     align-items: center;
     text-align: left;
+}*/
 
-}
-
-.footer-social {
-    align-items: center;
-    text-align: left;
-}
 
 .footer-card {
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: var(--font-weight500);
