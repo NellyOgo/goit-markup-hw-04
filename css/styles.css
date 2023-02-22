@@ -332,29 +332,22 @@ background-color: var(--color-lightblue);
 }
 
 .section-customers {
-    Width: 1px;
-    align-items: center;
-    text-align: center;
-     gap: 24px;
+    height: 88px;
     flex-basis: calc((100% - 24px *5) / 6);
-    background-color: var(--color-inverted);
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
 }
 
 .section-customers:hover {
     border: 1px solid var(--color-lightblue);
+    border-radius: 4px;
 }
 .section-customers:focus {
     border: 1px solid var(--color-lightblue);
+    border-radius: 4px;
 }
 
 .customers-icon {
     width: 104px;
     height: 56px;
-    margin: 16px 32px;
-    display: flex;
-
 }
 
 .icons-customers{
@@ -366,18 +359,25 @@ background-color: var(--color-lightblue);
 }
 
 .customers-link {
-    fill: var(--color-gray);
-    border: 1px
+   width: 100%;
+   height: 100%;
+   display: flex;
+   border: 1px solid #8E8F99;
+   border-radius: 4px;
+   justify-content: center;
+   align-items: center;
+   fill: var(--color-gray);
+   
 }
 
 .customers-link:hover .customers-icon{
     fill: var(--color-lightblue);
-    border: 1px
+    border-radius: 4px;
 }
 
 .customers-link:focus {
     fill: var(--color-lightblue);
-    border: 1px
+    border-radius: 4px;
 }
 
 /*footer-index*/
@@ -389,8 +389,7 @@ background-color: var(--color-lightblue);
     background-color: var(--color-one);
     color: var(--color-lighter);
     letter-spacing: 0.03em;
-    line-height: var(--line-height15);
-  
+    line-height: var(--line-height15);  
     text-decoration: none;
 }
 
@@ -403,9 +402,8 @@ background-color: var(--color-lightblue);
 
 .footer-text{
     width: 264px;
-margin-top: 16px;
-margin-bottom: 0px;
-margin-right: 120px;
+    margin-top: 16px;
+    margin-bottom: 0px;
 }
 
 .footer-text:focus {
@@ -422,37 +420,27 @@ margin-right: 120px;
     letter-spacing: 0.02em;
 }
 
-
 .footer-container {
     display: flex;
 }
 
-/*
-.container-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-containerone{
+    width: 264px;
+    height: 110px;
+}
 
-}*/
-
-/*
-.footer-pages {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}*/
-
+.footer-containertwo {
+    margin-left: 120px;
+}
 
 .footer-card {
-    display: flex;
-    justify-content: center;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: var(--font-weight500);
     font-size: var(--font-size16);
-    line-height: 24px;
+    line-height: var(--line-height15);
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--color-inverted);
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--font-weight500);
 }
 
 .footer-link {
