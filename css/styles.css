@@ -57,7 +57,6 @@ ul {
 img {
     display: block;
     height: auto;
-    border: 1px;
 }
 
 .visually-hidden {
@@ -226,8 +225,11 @@ img {
     align-items: center;
     text-align: center;
     flex-basis: calc((100% - 24px *3) / 4);
+    display: flex;
+    width: 264px;
+    height: 112px;
     margin-bottom: 8px;
-    padding: 24px 100px;
+    justify-content: center;
 }
 
 /*section-two-index*/
@@ -294,8 +296,8 @@ img {
 }
 
 .socials-icon {
-    Width: 16px;
-    Height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .socials-item {
@@ -322,6 +324,13 @@ background-color: var(--color-lightblue);
 background-color: var(--color-lightblue);
 }
 
+.name-cardindex {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-top: none;
+}
+
 /*Customers*/
 
 .customers {
@@ -338,11 +347,11 @@ background-color: var(--color-lightblue);
 
 .section-customers:hover {
     border: 1px solid var(--color-lightblue);
-    border-radius: 4px;
 }
+    
+
 .section-customers:focus {
     border: 1px solid var(--color-lightblue);
-    border-radius: 4px;
 }
 
 .customers-icon {
@@ -404,6 +413,7 @@ background-color: var(--color-lightblue);
     width: 264px;
     margin-top: 16px;
     margin-bottom: 0px;
+    line-height: var(--line-height15);
 }
 
 .footer-text:focus {
@@ -462,6 +472,11 @@ background-color: var(--color-lightblue);
     background: #31D0AA;
 }
 
+.socials-iconfooter {
+    width: 24px;
+    height: 24px;
+}
+
 
 /*portfolio*/
 
@@ -514,15 +529,27 @@ background-color: var(--color-lightblue);
     border-width: 1px;
 }
 
-
 .name-card {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     border: 1px solid #E7E9FC;
-    border-top: none;
-    border: 1px solid #F4F4FD;
+    border-top: none; 
 }
+
+
+.card-link {
+    border: 1px solid #E7E9FC;
+    text-decoration: none;
+}
+.card-link:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .name-card:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -541,8 +568,7 @@ background-color: var(--color-lightblue);
         padding-bottom: 120px;
         column-gap: 24px;
         row-gap: 48px;
-        flex-basis: calc((100% - 48px) /3);
-        
+        flex-basis: calc((100% - 48px) /3);  
 }
 
 
