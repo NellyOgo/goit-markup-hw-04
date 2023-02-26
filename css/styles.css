@@ -14,8 +14,8 @@
     --font-weight500: 500;
     --font-weight700: 700;
     --font-weight800: 800;
-    --line-height1: 1,0;
-    --line-height15: 1,5;
+    --line-height1: 1.0;
+    --line-height15: 1.5;
 }
 
 /*general*/
@@ -215,7 +215,7 @@ img {
 .text-one {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: var(--line-height15);
     letter-spacing: 0.02em;
 }
 
@@ -335,7 +335,7 @@ background-color: var(--color-lightblue);
     display: block;
     align-items: center;
     text-align: center;
-    padding: 130px 156px 120px;
+    padding: 120px 0;
 }
 
 .section-customers {
@@ -552,7 +552,7 @@ background-color: var(--color-lightblue);
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-    border: 1px solid #E7E9FC;
+   
     border-top: none; 
     color: var(--color-two);
 }
